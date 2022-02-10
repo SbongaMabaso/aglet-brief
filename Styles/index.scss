@@ -1,0 +1,161 @@
+body{
+    font-family: 'Lato', 'sans-serif';
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    background-color: #111;
+    color: white;
+    padding: 20px 0px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links{
+    font-style: 50px;
+    color: white;
+    cursor: pointer;
+}
+
+.humburger {
+    display: none;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.links a{
+    justify-content: space-between;
+    margin: 20px;
+    color: white;
+    font-style: 20px;
+    border-bottom: none;
+}
+
+// Slider styling
+.slider{
+    display: flex;
+    height: 650px;
+    background-color: #111;
+}
+
+.slider .sliderItem{
+    width: 350px;
+    height: 250px;
+    margin: 50px;
+}
+
+.slider .sliderItem .img{
+    width: 350px;
+    height: 250px;
+}
+
+.slider .sliderItem h2{
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.slider .sliderItem p{
+    color: gray;
+    font-size: 20px;
+}
+
+.contact{
+    background-color: black;
+    margin: 0;
+}
+
+.contactDetails{
+    position: relative;
+    display: flex;
+}
+
+.left{
+    flex: 1;
+    padding: 80px;
+    margin-top: 0px;
+    display: inline-block;
+}
+
+.right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-block h1{
+    color: darkgray;
+    font-weight: bold;
+    font-size: 200px;
+    padding: 10px;
+    margin-left: 0px;
+    position: absolute;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.right p{
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 500px 0px 50px;
+    margin-bottom: 20px;
+}
+
+.right .share p{
+    padding: 0;
+}
+
+.right .share a{
+    color: white;
+    margin: 5px;
+    padding-left: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        padding: 0px 20px;
+    }
+    .links{
+        display: none;
+    }
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .sliderItem{
+        width: 300px;
+        height: 200px;
+        margin: 25px;
+    }
+
+    .sliderItem img video{
+        width: 300px;
+        height: 200px;
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+    .right {
+        width: 300px;
+        height: 200px;
+    }
+    .text-block h1{
+        font-style: 100px;
+    }
+    .right p{
+        flex-direction: column;
+    }
+}
